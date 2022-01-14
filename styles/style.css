@@ -80,7 +80,7 @@ hr{
     /* height: 100%; */
     width: 440px;
     height: 414px;
-    background-image: url("/images/Circle\ design.svg");
+    background-image: url("../images/Circle\ design.svg");
     /* background-size: 100% 100%; */
     background-size: cover;
     background-repeat: no-repeat;
