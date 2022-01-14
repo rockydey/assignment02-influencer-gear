@@ -237,15 +237,14 @@ hr{
     margin-top: 0;
 }
 .footer-icon{
-    margin-top: 30px;
-}
-.footer-icon span{
-    background-color: #22203b;
-    padding: 10px 3px 10px 3px;
-    border-radius: 100%;
+    margin-top: 25px;
 }
 .footer-icon .filled-color{
-    font-size: 20px;
+    width: 20px;
+    font-size: 18px;
+    background-color: #22203b;
+    padding: 10px;
     color: #fff;
-    margin: 0 10px;
+    margin: 0 5px;
+    border-radius: 50%;
 }
