@@ -17,10 +17,15 @@ body{
     color: #FFFFFF;
     border: none;
     border-radius: 40px;
+    cursor: pointer;
 }
 .common-btn .fa-arrow-right{
     font-size: 24px;
     margin: 0 8px;
+}
+.common-btn:hover{
+    transform: translateX(15px);
+    transition: transform 1s ease-in-out;
 }
 hr{
     border-image-source: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
@@ -76,15 +81,26 @@ hr{
     margin: 0 120px;
     align-items: center;
 }
-.head-image img{
-    /* height: 100%; */
-    width: 440px;
-    height: 414px;
+.head-image{
+    width: 475px;
+    height: 475px;
     background-image: url("../images/Circle\ design.svg");
-    /* background-size: 100% 100%; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+}
+.head-image img{
+    width: 440px;
+    height: 414px;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+}
+.head-image img:hover{
+    transform: scale(1.25);
+    transition: transform 1s ease-in;
+    cursor: pointer;
 }
 .head-texts{
     margin-right: 130px;
@@ -112,6 +128,7 @@ hr{
 .companies{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
     height: 108px;
     align-items: center;
     margin: 0 225px;
