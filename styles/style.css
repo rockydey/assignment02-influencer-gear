@@ -51,6 +51,7 @@ hr{
 }
 .main-manu .manu ul{
     display: flex;
+    align-items: center;
 }
 .main-manu .manu ul li{
     list-style: none;
@@ -75,11 +76,13 @@ hr{
     margin-bottom: 100px;
 }
 .head-section{
-    /* height: 500px; */
     display: flex;
     justify-content: space-between;
     margin: 0 120px;
     align-items: center;
+}
+.head-texts{
+    width: 50%;
 }
 .head-image{
     width: 475px;
@@ -101,9 +104,6 @@ hr{
     transform: scale(1.25);
     transition: transform 1s ease-in;
     cursor: pointer;
-}
-.head-texts{
-    margin-right: 130px;
 }
 .head-title{
     font-weight: 700;
@@ -136,6 +136,8 @@ hr{
 
 /* Popular Collection Style */
 .collection-container{
+    display: flex;
+    flex-direction: column;
     margin-bottom: 100px;
 }
 .popular-collection{
@@ -208,9 +210,11 @@ hr{
     color: #787885;
     margin-bottom: 0;
 }
+.collection-see-more{
+    width: 1040px;
+}
 .see-more-btn{
     text-align: right;
-    margin-right: 235px;
     margin-top: 50px;
 }
 .see-more-btn a{
@@ -264,4 +268,58 @@ hr{
     color: #fff;
     margin: 0 5px;
     border-radius: 50%;
+}
+
+/*------------------- 
+    Media Queries
+-------------------*/
+/* Mobile Device */
+@media only screen and (max-width:767px){
+    .logo-title{
+        margin-top: 40px;
+    }
+    .main-manu{
+        margin: 0;
+        flex-direction: column;
+    }
+    .main-manu .manu ul li{
+        margin-right: 20px;
+    }
+    .main-manu .manu ul{
+        padding: 0;
+        margin-top: 0;
+    }
+    .head-section{
+        flex-direction: column;
+        margin: 0;
+        align-items: flex-start;
+    }
+    .head-section .head-texts{
+        order: 2;
+    }
+    .head-section .head-image{
+        order: 1;
+    }
+    .head-texts{
+        margin-left: 10px;
+        width: 400px;
+        text-align: left;
+    }
+    .head-image {
+        width: 410px;
+        height: 410px;
+    }
+    .head-image img{
+        width: 400px;
+        height: 374px;
+        left: 5px;
+    }
+    .head-title{
+        font-size: 42px;
+        line-height: 58px;
+        margin-top: 40px;
+    }
+    .collection-container, .companies-container, #footer{
+        display: none;
+    }
 }
