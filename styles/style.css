@@ -230,6 +230,33 @@ hr{
     font-size: 16px;
 }
 
+/* Buy Now Style */
+.buy-now{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 240px;
+    background-image: url(../images/Buy-Now-bg\ .jpg);
+    background-color: #0b0927ed;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.buy-now .heading{
+    margin-left: 120px;
+}
+.buy-now .button{
+    margin-right: 120px;
+}
+.buy-now-title{
+    color: #fff;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
 /* Footer Style */
 #footer{
     height: 280px;
@@ -286,12 +313,15 @@ hr{
         margin: 0;
         flex-direction: column;
     }
-    .main-manu .manu ul li{
-        margin-right: 20px;
-    }
     .main-manu .manu ul{
         padding: 0;
         margin-top: 0;
+    }
+    .main-manu .manu ul li{
+        margin-right: 20px;
+    }
+    .main-manu .manu ul li:last-child{
+        margin-right: 0;
     }
     .head-section{
         flex-direction: column;
@@ -306,7 +336,7 @@ hr{
     }
     .head-texts{
         text-align: center;
-        width: 400px;
+        width: 100%;
     }
     .head-image {
         width: 410px;
@@ -336,6 +366,17 @@ hr{
     }
     .collection-see-more {
         width: 330px;
+    }
+    .buy-now{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .buy-now .heading{
+        margin-left: 5px;
+    }
+    .buy-now .button{
+        margin-right: 5px;
     }
 }
 
@@ -371,5 +412,11 @@ hr{
     }
     .collection-see-more {
         width: 690px;
+    }
+    .buy-now .heading{
+        margin-left: 20px;
+    }
+    .buy-now .button{
+        margin-right: 20px;
     }
 }
