@@ -9,7 +9,8 @@ body{
 }
 .common-btn{
     display: flex;
-    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     padding: 10px 24px;
@@ -275,6 +276,9 @@ hr{
 -------------------*/
 /* Mobile Device */
 @media only screen and (max-width:767px){
+    .common-btn{
+        margin: 0 auto;
+    }
     .logo-title{
         margin-top: 40px;
     }
@@ -301,9 +305,8 @@ hr{
         order: 1;
     }
     .head-texts{
-        margin-left: 10px;
+        text-align: center;
         width: 400px;
-        text-align: left;
     }
     .head-image {
         width: 410px;
@@ -319,13 +322,54 @@ hr{
         line-height: 58px;
         margin-top: 40px;
     }
+    .companies-container {
+        margin-bottom: 0;
+    }
+    .companies, hr{
+        display: none;
+    }
     .collections{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .collection-title{
+        margin-top: 0;
     }
     .collection-see-more {
         width: 330px;
     }
-    .companies-container, #footer{
-        display: none;
+}
+
+/* Tablet Device */
+@media only screen and (min-width: 768px) and (max-width:1023px){
+    .main-manu{
+        margin: 0 17px;
+    }
+    .head-section{
+        margin: 0 17px;
+    }
+    .head-image{
+        width: 435px;
+        height: 435px;
+        background-size: contain;
+    }
+    .head-image img {
+        width: 420px;
+        height: 394px;
+        top: 15px;
+        left: 0;
+    }
+    .head-title{
+        font-size: 46px;
+        line-height: 56px;
+    }
+    .companies{
+        margin: 0 25px;
+        grid-column-gap: 15px;
+    }
+    .collections{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .collection-see-more {
+        width: 690px;
     }
 }
