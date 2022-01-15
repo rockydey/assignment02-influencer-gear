@@ -115,7 +115,7 @@ hr{
     margin-bottom: 16px;
 }
 .head-info{
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     color: #3A3A3A;
@@ -303,6 +303,10 @@ hr{
 -------------------*/
 /* Mobile Device */
 @media only screen and (max-width:767px){
+    .common-btn:hover{
+        transform: translateX(15px);
+        transition: transform 1s ease-in-out;
+    }
     .common-btn{
         margin: 0 auto;
     }
@@ -347,6 +351,11 @@ hr{
         height: 374px;
         left: 5px;
     }
+    .head-image img:hover{
+        transform: scale(1.25);
+        transition: transform 1s ease-in;
+        cursor: pointer;
+    }
     .head-title{
         font-size: 42px;
         line-height: 58px;
@@ -382,6 +391,10 @@ hr{
 
 /* Tablet Device */
 @media only screen and (min-width: 768px) and (max-width:1023px){
+    .common-btn:hover{
+        transform: translateX(15px);
+        transition: transform 1s ease-in-out;
+    }
     .main-manu{
         margin: 0 17px;
     }
@@ -398,6 +411,11 @@ hr{
         height: 394px;
         top: 15px;
         left: 0;
+    }
+    .head-image img:hover{
+        transform: scale(1.25);
+        transition: transform 1s ease-in;
+        cursor: pointer;
     }
     .head-title{
         font-size: 46px;
